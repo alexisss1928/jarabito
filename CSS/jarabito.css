@@ -31,7 +31,7 @@ body {
 
     .ima_logo {
         background-color: #0f131c;
-        align-self: center
+        align-self: center;
         width: 90%;
         height: 25%;
         display: flex;
