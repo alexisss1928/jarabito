@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jarabito - Tu calculadora de dosis pediatrica</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/jarabito.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+        <script src="js/jarabito.js"></script>
+    </head>
+    <body>
+        <div class = "left">
+            <div class="navbar__left">
+                
+            </div>
+            <div class="main">
+                <div class="app">
+                    <img src="imagenes/kids_1.jpg" alt="niños jugando jarabito" class = "left__kids">
+                </div>
+                <div class = "ima_logo">
+                    <h2 class="titulo">Jarabito</h2>
+                </div>
+            </div>
+        </div>
+        <div class = "right">
+            <div class="right__navBar">
+                <div class="navTitulo">
+                    <a href="" class = "navTitulo__link">Jarabito</a>
+                </div>
+                <div class="navbar__right-item">
+                    <a href="index.html" class = "navbar__links"><i class="fas fa-home"></i>     Inicio</a>
+                </div>
+                <div class="navbar__right-item">
+                    <a href="" class = "navbar__links"><i class="fas fa-mortar-pestle"></i>     Antibioticos</a>
+                </div>
+                <div class="navbar__right-item">
+                    <a href="" class = "navbar__links"><i class="fas fa-capsules"></i>     Analgesicos</a>
+                </div>
+                <div class="navbar__right-item">
+                    <a href="" class = "navbar__links"><i class="fas fa-pills"></i>     Otros</a>
+                </div>
+                <div class="navbar__right-item">
+                    <a href="" class = "navbar__links"><i class="fas fa-notes-medical"></i>     Sitios de interes</a>
+                </div>
+            </div>
+            <div class="calc">
+                <div class="calcHeader">
+                    <p>Calculadora para antibioticos</p>
+                </div>
+                <div class="calcBody">
+                    <div class = "datos">
+                        <div class = "datos__datos">
+                            <div>
+                                <p class="selMed">Selecciona el medicamento</p>
+                                <div class = "select">
+                                    <select id = "medicamento">
+                                        <option value = "opciones" selected disabled>Selecciona el medicamento</option>
+                                        <option value="50,5,125,3, Amoxicilina">Amoxicilina (125mg/5ml)</option>
+                                        <option value="80,5,400,3, Amoxicilina + Ac. clavulanico">Amoxicilina + Ac. Clavulanico (400mg/5ml)</option>
+                                        <option value="10, 5, 200, 1, Azitromicina">Azitromicina (200mg/5ml)</option>
+                                        <option value="25, 5, 75, 3, Clindamicina">Clindamicina (75mg/5ml)</option>
+                                    </select>
+                                </div>
+                                <p>Escribe el peso del niño (en Kg)</p>
+                                <input id = "peso" type="text" placeholder = "Escribe el peso aqui" value = "">
+                            </div>
+                        </div>
+                        <div class="datos__enviar">
+                            <div>
+                                <button onclick = "myFunction()" class = "boton">Calcular</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="resultados">
+                        <div>
+                            <h2>Dosis recomendada</h2>
+                            <p id = "dosis">Tu resultado se mostrara aqui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nota">
+                <p class="nota__note">Si el medicamento que buscas no esta en las presentaciones
+                de la lista, te invitamos a usar nuestra <a href="" class="calcManual__button"><strong>calculadora manual</strong></a>.</p>
+            </div>
+        </div>
+    </body>
+</html>

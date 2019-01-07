@@ -3,7 +3,7 @@ body {
     padding:0;
     width: 100%;
     height: 100vh;
-    background-color: #1d2f43;
+    background-image: linear-gradient(to top,  #0f131c,#1d2f43);
     display: flex;
     -webkit-display: flex;
     font-family: 'Montserrat';
@@ -75,17 +75,17 @@ body {
         justify-content: center;
     }
 
-    .right__navBar {
-        position: absolute;
-        top:0;
-        background-color: #0f131c;
-        height: 80px;
-        width: 50%;
-        display:flex;
-        -webkit-display:flex;
-        font-family: 'Montserrat', sans-serif;
-        align-items: center;
-        justify-content: space-around;
+        .right__navBar {
+            position: absolute;
+            top:0;
+            background-color: #0f131c;
+            height: 80px;
+            width: 50%;
+            display:flex;
+            -webkit-display:flex;
+            font-family: 'Montserrat', sans-serif;
+            align-items: center;
+            justify-content: space-around;
         }
     
         .navbar__links {
@@ -205,6 +205,37 @@ body {
                 color: #278ea5;
             }
 
+    .bienvenida {
+        text-align: center;
+        padding: 80px;
+        color:white;
+        font-size: .9em;
+    }
+
+        .bienvenida__titulo{
+            font-size: 1.5em;
+            color: #278ea5;
+        }
+
+
+    .citas {
+        color:white;
+        width: 300px;
+        font-size: .7em;
+        text-align: right;
+        position: absolute;
+        bottom: 50px;
+        right:50px;
+    }
+
+        .citas__titulo{
+            font-size: 1.5em;
+        }
+
+/**************************
+***Media queries tablet***
+**************************/
+
 
 @media (max-width: 890px) {
     body {
@@ -247,6 +278,12 @@ body {
     color: #071e3d;
 }
 }
+
+
+/**************************
+***Media queries phone***
+**************************/
+
 
 @media (max-width: 580px) {
     body {
