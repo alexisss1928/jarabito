@@ -1,0 +1,301 @@
+body {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1d2f43;
+    display: flex;
+    -webkit-display: flex;
+    font-family: 'Montserrat';
+}
+
+    .left {
+        width: 50%;
+        display: flex;
+        -webkit-display: flex;
+        justify-content: center
+    }
+
+    .main{
+        width: 90%;
+    }
+    
+    .left__kids {
+        width: 100%;
+    }
+
+    .app{
+        height: 75%;
+        overflow: hidden;
+    }
+
+    .ima_logo {
+        background-color: #0f131c;
+        align-self: center
+        width: 90%;
+        height: 25%;
+        display: flex;
+        -webkit-display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo {
+        padding: 0;
+        margin:0;
+        font-family: 'Indie Flower', cursive;
+        font-size: 5em;
+        color:#071e3d;
+        text-shadow: 1px 1px  white, -1px -1px  white, -1px 1px  white, 1px -1px  white;
+        color:#071e3d;
+    }
+
+    .navTitulo {
+        display: none;
+        -webkit-display: none;
+    }
+
+    .titulo:hover {
+        transform:skew(10deg , 5deg);
+    }
+
+    .navbar__left {
+        position: absolute;
+        background-color: #0f131c;
+        height: 80px;
+        width: 50%;
+        z-index:-1;
+    }
+    .right {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        -webkit-display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right__navBar {
+        position: absolute;
+        top:0;
+        background-color: #0f131c;
+        height: 80px;
+        width: 50%;
+        display:flex;
+        -webkit-display:flex;
+        font-family: 'Montserrat', sans-serif;
+        align-items: center;
+        justify-content: space-around;
+        }
+    
+        .navbar__links {
+            color:white;
+            text-decoration: none;
+            font-size: .7em;            
+        }
+        
+        .calc {
+            width:70%;
+            height: 350px;
+            border-radius: 7%;
+            
+        }
+
+            .calcHeader {
+                height: 50px;
+                border-radius: 10px 10px 0 0;
+                background-color: #0f131c;
+                display:flex;
+                -webkit-display:flex;
+                align-content: center;
+                justify-content: center;
+                color:white;
+                font-family: "Montserrat";
+            }
+
+            .calcBody {
+                height: 300px;
+                border-radius: 0 0 10px 10px;
+                background-color: white;
+            }
+
+            .datos {
+                display:flex;
+                -webkit-display:flex;
+                height: 150px;
+            }
+
+            .datos__datos {
+                width: 70%;
+                display: flex;
+                -webkit-display:flex;
+                align-items: center;
+                justify-content: center;
+                font-size: .8em;
+                text-align: center;
+            }
+
+            .datos__enviar {
+                width: 30%;
+                display: flex;
+                -webkit-display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .boton {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: #0f131c;
+                border: 4px solid #278ea5;
+                color:white;
+                font-family: 'Montserrat';
+                font-size: .7em;
+                box-shadow: 0 9px #999;
+                outline: none;
+            }
+
+            .boton:active {
+                background-color: #1d2f43;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+              }
+
+            input, select {
+                border: 4px solid #278ea5;
+                border-radius: 15px;
+                width: 80%;
+                outline: none;
+            }
+
+            .resultados {
+                height: 150px;
+                display: flex;
+                -webkit-display:flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: .8em;
+            }
+
+            #dosis {
+                margin:15px;
+                text-align: center;
+            }
+
+
+        .nota {
+            position: absolute;
+            bottom:30px;
+            color:white;
+            font-family: "Montserrat";
+            font-size: .8em;
+            display: flex;
+            -webkit-display:flex;
+            justify-content: center;
+        }
+
+        .nota__note  {
+            width:70%;
+        }
+
+            .calcManual__button {
+                text-decoration: none;
+                color: #278ea5;
+            }
+
+
+@media (max-width: 890px) {
+    body {
+        display:block;
+        -webkit-display:block;
+    }
+
+.left{
+    width: 100%
+}
+.right{
+    width: 100%;
+}
+.main{
+    width: 100%;
+}
+.right__navBar {
+    width:100%;
+    position: absolute;
+    top:0;
+}
+.left__kids{
+    display:none;
+    -webkit-display:none;
+}
+.titulo{
+    display:none;
+    -webkit-display:none;
+    
+}
+.navTitulo{
+    display: flex;
+    -webkit-display: flex;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    text-shadow: .5px .5px  white, -.5px -.5px  white, -.5px .5px  white, .5px -.5px  white;    
+}
+.navTitulo__link {
+    text-decoration: none;
+    color: #071e3d;
+}
+}
+
+@media (max-width: 580px) {
+    body {
+        display:block;
+        -webkit-display:block;
+    }
+
+.left{
+    width: 100%
+}
+.right{
+    width: 100%;
+}
+.main{
+    width: 100%;
+}
+.right__navBar {
+    width:100%;
+    position: absolute;
+    top:0;
+}
+.left__kids{
+    display:none;
+    -webkit-display:none;
+}
+.titulo{
+    display:none;
+    -webkit-display:none;
+    
+}
+.navTitulo{
+    display: flex;
+    -webkit-display: flex;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+    text-shadow: .5px .5px  white, -.5px -.5px  white, -.5px .5px  white, .5px -.5px  white;    
+}
+.navTitulo__link {
+    text-decoration: none;
+    color: #071e3d;
+}
+.calc {
+    width:90%;
+}
+.navbar__right-item{
+    display:none;
+    -webkit-display:none;
+}
+.nota{
+    bottom: 10px;
+}
+}
