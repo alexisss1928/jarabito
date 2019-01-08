@@ -62,3 +62,17 @@ function myFunction() {
   }
 };
 
+/****************
+ ******Menu******
+ ***************/
+
+function openMenu() {
+  const el = document.getElementById("container__menuMovil");
+  el.style.left = "0";
+};
+
+function closeMenu() {
+  const close = document.getElementById("container__menuMovil");
+  close.style.left = "100%";
+};
+
