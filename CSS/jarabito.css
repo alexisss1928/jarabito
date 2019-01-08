@@ -386,7 +386,7 @@ text-align: center;
 }
 
 .close {
-    font-size: 2em;
+    font-size: 3em;
     color: white;
 }
 
@@ -398,6 +398,7 @@ text-align: center;
 .open {
     display: flex;
     font-size: .7em;
+    color:white;
 }
 
 
