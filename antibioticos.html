@@ -11,6 +11,35 @@
         <script src="js/jarabito.js"></script>
     </head>
     <body>
+    <div id = "container__menuMovil">
+            <div class = "menuMovil">
+                
+                <div class="menuMovil__item">
+                        <a href="index.html">Home</a>
+                </div>
+                <hr/>
+                <div class="menuMovil__item">
+                        <a href="antibioticos.html">Antibioticos</a>
+                </div>
+                <hr/>
+                <div class="menuMovil__item">
+                        <a href="">Analgesicos</a>
+                </div>
+                <hr/>
+                <div class="menuMovil__item">
+                        <a href="">Otros</a>
+                </div>
+                <hr/>
+                <div class="menuMovil__item">
+                        <a href="">Sitios de interes</a>
+                </div>
+                <hr/>
+                <div class="menuMovil__item" onclick = "closeMenu()">
+                    <i class="far fa-times-circle close"></i>
+                </div>
+                    
+            </div>
+        </div>
         <div class = "left">
             <div class="navbar__left">
                 
@@ -27,7 +56,12 @@
         <div class = "right">
             <div class="right__navBar">
                 <div class="navTitulo">
-                    <a href="" class = "navTitulo__link">Jarabito</a>
+                    <a href="index.html" class = "navTitulo__link">Jarabito</a>
+                </div>
+                <div class="navTitulo" onclick="openMenu()">
+                    
+                        <i class="fas fa-ellipsis-h open"></i>
+                        
                 </div>
                 <div class="navbar__right-item">
                     <a href="index.html" class = "navbar__links"><i class="fas fa-home"></i>     Inicio</a>
