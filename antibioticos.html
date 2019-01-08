@@ -27,7 +27,7 @@
                 </div>
                 <hr/>
                 <div class="menuMovil__item">
-                        <a href="">Otros</a>
+                        <a href="otros.html">Otros</a>
                 </div>
                 <hr/>
                 <div class="menuMovil__item">
@@ -73,7 +73,7 @@
                     <a href="analgesicos.html" class = "navbar__links"><i class="fas fa-capsules"></i>     Analgesicos</a>
                 </div>
                 <div class="navbar__right-item">
-                    <a href="" class = "navbar__links"><i class="fas fa-pills"></i>     Otros</a>
+                    <a href="otros.html" class = "navbar__links"><i class="fas fa-pills"></i>     Otros</a>
                 </div>
                 <div class="navbar__right-item">
                     <a href="" class = "navbar__links"><i class="fas fa-notes-medical"></i>     Sitios de interes</a>
@@ -91,10 +91,16 @@
                                 <div class = "select">
                                     <select id = "medicamento">
                                         <option value = "opciones" selected disabled>Selecciona el medicamento</option>
-                                        <option value="50,5,125,3, Amoxicilina">Amoxicilina (125mg/5ml)</option>
-                                        <option value="80,5,400,3, Amoxicilina + Ac. clavulanico">Amoxicilina + Ac. Clavulanico (400mg/5ml)</option>
-                                        <option value="10, 5, 200, 1, Azitromicina">Azitromicina (200mg/5ml)</option>
-                                        <option value="25, 5, 75, 3, Clindamicina">Clindamicina (75mg/5ml)</option>
+                                        <optgroup label = "Amoxicilina">
+                                            <option value="50,5,125,3, Amoxicilina">Suspension (125mg/5ml)</option>
+                                            <option value="80,5,400,3, Amoxicilina + Ac. clavulanico">Con ac. clavulanico - Suspension (400mg/5mg)</option>
+                                        </optgroup>
+                                        <optgroup label = "Azitromicina">
+                                            <option value="10, 5, 200, 1, Azitromicina">Suspension (200mg/5ml)</option>
+                                        </optgroup>
+                                        <optgroup label = "Clindamicina">
+                                            <option value="25, 5, 75, 3, Clindamicina">Suspension (75mg/5ml)</option>
+                                        </optgroup>
                                     </select>
                                 </div>
                                 <p>Escribe el peso del niño (en Kg)</p>
