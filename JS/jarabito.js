@@ -67,12 +67,26 @@ function myFunction() {
  ***************/
 
 function openMenu() {
-  const el = document.getElementById("container__menuMovil");
-  el.style.left = "0";
-};
+  const open = document.getElementById("container__menuMovil");
+  open.style.left = "0";
+}
 
 function closeMenu() {
   const close = document.getElementById("container__menuMovil");
   close.style.left = "100%";
 };
 
+
+/**
+function openMenu(e) {
+  e.preventDefault();
+   const open = document.getElementById("two");
+ open.style.left = "0";}
+ 
+ function init() {
+  const link = document.querySelector('a');
+  link.addEventListener('click', openMenu)
+ };
+ 
+ init();
+  */
