@@ -354,7 +354,9 @@ body {
     bottom: 10px;
 }
 .citas {
-    font-size: .6em;
+    position:absolute;
+    bottom:20px;
+    font-size: .7em;
     text-align: center;
     right:50%;
     transform: translate(50%, 0);
