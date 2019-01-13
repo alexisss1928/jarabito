@@ -1,0 +1,14 @@
+module.exports = {
+    "extends": "airbnb",
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "env" : {
+        "node": true,
+        "browser": true,
+        "es6": true
+    },
+    "rules" : {
+        "quotes": 0
+    }
+}

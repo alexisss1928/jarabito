@@ -1,6 +1,4 @@
-/********************************
- ** Funcion de frases aleatorias*
- ********************************/
+/**Funcion de frases aleatorias*/
 
 function frases_alea(){
 
