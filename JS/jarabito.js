@@ -1,6 +1,6 @@
 /**Funcion de frases aleatorias*/
 
-function frases_alea(){
+function frases_alea () {
 
   frases = new Array();
   
