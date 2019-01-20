@@ -212,6 +212,10 @@ body {
         font-size: .9em;
     }
 
+        .bienvenida img{
+            width: 10em;
+        }
+
         .bienvenida__titulo{
             font-size: 1.5em;
             color: #278ea5;
