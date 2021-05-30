@@ -1,322 +1,298 @@
+class Medicine {
+    constructor(dosisKilo, dosisDia, mL, mG, nota, contra, comercial) {
+        this.dosisKilo = dosisKilo;
+        this.dosisDia = dosisDia;
+        this.mL = mL;
+        this.mG = mG;
+        this.nota = nota;
+        this.contra = contra;
+        this.comercial = comercial;
+    }
+}
+
 //Dosis de Analgesicos
-const acetaminofen = {
-    dosisKilo: 20,
-    dosisDia: 4,
-    mL: 5,
-    mG: 150,
-    nota: "Puede indicarse durante el embarazo",
-    contra: "Trastornos hepáticos, no administrar por periodos mayores a 10 días",
-    comercial: "Atamel, Tachipirin, Tempra",
-};
 
-const dipirona = {
-    dosisKilo: 12,
-    dosisDia: 4,
-    mL: 1,
-    mG: 50,
-    nota: "Usar como ultima opción, indicado en pacientes con trastornos hepáticos",
-    contra: "Disminuye resistencia a infecciones",
-    comercial: "Bral, Conmel, Novalcina",
-};
+const acetaminofen = new Medicine(
+    20,
+    4,
+    5,
+    150,
+    "Puede indicarse durante el embarazo",
+    "Atamel, Tachipirin, Tempra"
+);
 
-const diclofenac = {
-    dosisKilo: 2,
-    dosisDia: 2,
-    mL: 1,
-    mG: 1.8,
-    nota: "Se recomienda su uso en niños mayores de 1 año",
-    contra: "",
-    comercial: "Cataflan, Clofen",
-};
+const dipirona = new Medicine(
+    12,
+    4,
+    1,
+    50,
+    "Usar como ultima opción, indicado en pacientes con trastornos hepáticos",
+    "Disminuye resistencia a infecciones",
+    "Bral, Conmel, Novalcina"
+);
 
-const ibuprofeno = {
-    dosisKilo: 10,
-    dosisDia: 2,
-    mL: 5,
-    mG: 100,
-    nota: "Se recomienda su uso en niños mayores de 2 años",
-    contra: "Antiagregante plaquetario en menor grado",
-    comercial: "Brugesic",
-};
+const diclofenac = new Medicine(
+    2,
+    2,
+    1,
+    1.8,
+    "Se recomienda su uso en niños mayores de 1 año",
+    "",
+    "Cataflan, Clofen"
+);
 
-const ketoprofeno = {
-    dosisKilo: 0.5,
-    dosisDia: 3,
-    mL: 1,
-    mG: 1,
-    nota: "Excelente en traumatismos, se recomienda su uso en niños a partir de 6 meses",
-    contra: "",
-    comercial: "Profenid",
-};
+const ibuprofeno = new Medicine(
+    10,
+    2,
+    5,
+    100,
+    "Se recomienda su uso en niños mayores de 2 años",
+    "Antiagregante plaquetario en menor grado",
+    "Brugesic"
+);
+
+const ketoprofeno = new Medicine(
+    0.5,
+    3,
+    1,
+    1,
+    "Excelente en traumatismos, se recomienda su uso en niños a partir de 6 meses",
+    "",
+    "Profenid"
+);
 
 //Dosis de Antibioticos
-const amoxicilina125 = {
-    dosisKilo: 90,
-    dosisDia: 3,
-    mL: 5,
-    mG: 125,
-    nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
-    contra: "",
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-};
+const amoxicilina125 = new Medicine(
+    90,
+    3,
+    5,
+    125,
+    "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+    "",
+    "Trimoxal, Amoxal, Genfar, Amoxiduo"
+);
 
-const amoxicilina250 = {
-    dosisKilo: 90,
-    dosisDia: 3,
-    mL: 5,
-    mG: 250,
-    nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
-    contra: "",
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-};
+const amoxicilina250 = new Medicine(
+    90,
+    3,
+    5,
+    250,
+    "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+    "",
+    "Trimoxal, Amoxal, Genfar, Amoxiduo"
+);
 
-const amoxicilina500 = {
-    dosisKilo: 90,
-    dosisDia: 3,
-    mL: 5,
-    mG: 500,
-    nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
-    contra: "",
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-};
+const amoxicilina500 = new Medicine(
+    90,
+    3,
+    5,
+    500,
+    "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+    "",
+    "Trimoxal, Amoxal, Genfar, Amoxiduo"
+);
 
-const amoxicilina750 = {
-    dosisKilo: 90,
-    dosisDia: 2,
-    mL: 5,
-    mG: 750,
-    nota: "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
-    contra: "",
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-};
+const amoxicilina750 = new Medicine(
+    90,
+    2,
+    5,
+    750,
+    "Actuá sobre la mayoría de microorganismos de la cavidad bucal",
+    "",
+    "Trimoxal, Amoxal, Genfar, Amoxiduo"
+);
 
-const amoxicilinaCla250 = {
-    dosisKilo: 90,
-    dosisDia: 3,
-    mL: 5,
-    mG: 250,
-    nota: "Niños mayores de 40Kg se maneja como adulto",
-    contra: "Se ha reportado pigmentación en las superficies dentales",
-    comercial: "Augmentin, Fulgram",
-};
+const amoxicilinaCla250 = new Medicine(
+    90,
+    3,
+    5,
+    250,
+    "Niños mayores de 40Kg se maneja como adulto",
+    "Se ha reportado pigmentación en las superficies dentales",
+    "Augmentin, Fulgram"
+);
 
-const amoxicilinaCla400 = {
-    dosisKilo: 90,
-    dosisDia: 3,
-    mL: 5,
-    mG: 400,
-    nota: "Niños mayores de 40Kg se maneja como adulto",
-    contra: "Se ha reportado pigmentación en las superficies dentales",
-    comercial: "Augmentin, Fulgram",
-};
+const amoxicilinaCla400 = new Medicine(
+    90,
+    3,
+    5,
+    400,
+    "Niños mayores de 40Kg se maneja como adulto",
+    "Se ha reportado pigmentación en las superficies dentales",
+    "Augmentin, Fulgram"
+);
 
-const amoxicilinaCla600 = {
-    dosisKilo: 90,
-    dosisDia: 2,
-    mL: 5,
-    mG: 600,
-    nota: "Niños mayores de 40Kg se maneja como adulto",
-    contra: "Se ha reportado pigmentación en las superficies dentales",
-    comercial: "Augmentin, Fulgram",
-};
+const amoxicilinaCla600 = new Medicine(
+    90,
+    2,
+    5,
+    600,
+    "Niños mayores de 40Kg se maneja como adulto",
+    "Se ha reportado pigmentación en las superficies dentales",
+    "Augmentin, Fulgram"
+);
 
-const eritromicina150 = {
-    dosisKilo: 50,
-    dosisDia: 4,
-    mL: 5,
-    mG: 150,
-    nota: "En desuso, siempre debe drenarse absceso antes de indicarlo",
-    contra: "",
-    comercial: "Ilosone",
-};
+const eritromicina150 = new Medicine(
+    50,
+    4,
+    5,
+    150,
+    "En desuso, siempre debe drenarse absceso antes de indicarlo",
+    "",
+    "Ilosone"
+);
 
-const eritromicina250 = {
-    dosisKilo: 50,
-    dosisDia: 4,
-    mL: 5,
-    mG: 250,
-    nota: "En desuso, siempre debe drenarse absceso antes de indicarlo",
-    contra: "",
-    comercial: "Ilosone",
-};
+const eritromicina250 = new Medicine(
+    50,
+    4,
+    5,
+    250,
+    "En desuso, siempre debe drenarse absceso antes de indicarlo",
+    "",
+    "Ilosone"
+);
 
-const claritromicina125 = {
-    dosisKilo: 7.5,
-    dosisDia: 2,
-    mL: 5,
-    mG: 125,
-    nota: "",
-    contra: "",
-    comercial: "klaricid",
-};
+const claritromicina125 = new Medicine(7.5, 2, 5, 125, "", "", "klaricid");
 
-const claritromicina250 = {
-    dosisKilo: 7.5,
-    dosisDia: 2,
-    mL: 5,
-    mG: 250,
-    nota: "",
-    contra: "",
-    comercial: "Klaricid",
-};
+const claritromicina250 = new Medicine(7.5, 2, 5, 250, "", "", "Klaricid");
 
-const azitromicina = {
-    dosisKilo: 10,
-    dosisDia: 1,
-    mL: 5,
-    mG: 200,
-    nota: "",
-    contra: "",
-    comercial: "Zitromax",
-};
+const azitromicina = new Medicine(10, 1, 5, 200, "", "", "Zitromax");
 
-const sultamicilina = {
-    dosisKilo: 50,
-    dosisDia: 2,
-    mL: 5,
-    mG: 250,
-    nota: "Niños mayores de 30Kg se maneja como adulto",
-    contra: "",
-    comercial: "Unasyn",
-};
+const sultamicilina = new Medicine(
+    50,
+    2,
+    5,
+    250,
+    "Niños mayores de 30Kg se maneja como adulto",
+    "",
+    "Unasyn"
+);
 
-const cefadroxilo250 = {
-    dosisKilo: 50,
-    dosisDia: 2,
-    mL: 5,
-    mG: 250,
-    nota: "Ideal para infecciones en tejido blando",
-    contra: "En pacientes alérgicos a la penicilina puede crear reacción cruzada",
-    comercial: "Bidroxil, Cefonax",
-};
+const cefadroxilo250 = new Medicine(
+    50,
+    2,
+    5,
+    250,
+    "Ideal para infecciones en tejido blando",
+    "En pacientes alérgicos a la penicilina puede crear reacción cruzada",
+    "Bidroxil, Cefonax"
+);
 
-const cefadroxilo500 = {
-    dosisKilo: 50,
-    dosisDia: 2,
-    mL: 5,
-    mG: 500,
-    nota: "Ideal para infecciones en tejido blando",
-    contra: "En pacientes alérgicos a la penicilina puede crear reacción cruzada",
-    comercial: "Bidroxil, Cefonax",
-};
+const cefadroxilo500 = new Medicine(
+    50,
+    2,
+    5,
+    500,
+    "Ideal para infecciones en tejido blando",
+    "En pacientes alérgicos a la penicilina puede crear reacción cruzada",
+    "Bidroxil, Cefonax"
+);
 
-const metronidazol125 = {
-    dosisKilo: 50,
-    dosisDia: 4,
-    mL: 5,
-    mG: 125,
-    nota: "",
-    contra: "No se debe mezclar con alcohol etílico por riesgo de efecto antabus, se debe esperar 48 horas",
-    comercial: "Flegyl, Metrovax",
-};
+const metronidazol125 = new Medicine(
+    50,
+    4,
+    5,
+    125,
+    "",
+    "No se debe mezclar con alcohol etílico por riesgo de efecto antabus, se debe esperar 48 horas",
+    "Flegyl, Metrovax"
+);
 
-const metronidazol250 = {
-    dosisKilo: 50,
-    dosisDia: 4,
-    mL: 5,
-    mG: 250,
-    nota: "",
-    contra: "No se debe mezclar con alcohol etílico por riesgo de efecto antabus, se debe esperar 48 horas",
-    comercial: "Flegyl, Metrovax",
-};
+const metronidazol250 = new Medicine(
+    50,
+    4,
+    5,
+    250,
+    "",
+    "No se debe mezclar con alcohol etílico por riesgo de efecto antabus, se debe esperar 48 horas",
+    "Flegyl, Metrovax"
+);
 
 //Dosis anestesicas
-const lidocaina = {
-    dosisKilo: 4.4,
-    dosisDia: 36,
-    nota: "",
-    contra: "",
-    comercial: "",
-};
+const lidocaina = new Medicine(4.4, 36, "", "", "");
 
-const mepivacaina = {
-    dosisKilo: 4.4,
-    dosisDia: 54,
-    nota: "",
-    contra: "",
-    comercial: "",
-};
+const mepivacaina = new Medicine(4.4, 54, "", "", "");
 
-const articaina = {
-    dosisKilo: 7,
-    dosisDia: 72,
-    nota: "Contraindicado en menores de 4 años",
-    contra: "",
-    comercial: "",
-};
+const articaina = new Medicine(
+    7,
+    72,
+    "Contraindicado en menores de 4 años",
+    "",
+    ""
+);
 
 //Dosis preventivas de antibioticos
-const amoxicilinaPre125 = {
-    dosisKilo: 50,
-    dosisDia: 1,
-    mL: 5,
-    mG: 125,
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g",
-};
+const amoxicilinaPre125 = new Medicine(
+    50,
+    1,
+    5,
+    125,
+    "Trimoxal, Amoxal, Genfar, Amoxiduo",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
+);
 
-const amoxicilinaPre250 = {
-    dosisKilo: 50,
-    dosisDia: 1,
-    mL: 5,
-    mG: 250,
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g",
-};
+const amoxicilinaPre250 = new Medicine(
+    50,
+    1,
+    5,
+    250,
+    "Trimoxal, Amoxal, Genfar, Amoxiduo",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
+);
 
-const amoxicilinaPre500 = {
-    dosisKilo: 50,
-    dosisDia: 1,
-    mL: 5,
-    mG: 500,
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g",
-};
+const amoxicilinaPre500 = new Medicine(
+    50,
+    1,
+    5,
+    500,
+    "Trimoxal, Amoxal, Genfar, Amoxiduo",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
+);
 
-const amoxicilinaPre750 = {
-    dosisKilo: 50,
-    dosisDia: 1,
-    mL: 5,
-    mG: 750,
-    comercial: "Trimoxal, Amoxal, Genfar, Amoxiduo",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 2g",
-};
+const amoxicilinaPre750 = new Medicine(
+    50,
+    1,
+    5,
+    750,
+    "Trimoxal, Amoxal, Genfar, Amoxiduo",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 2g"
+);
 
-const azitromicinaPre = {
-    dosisKilo: 15,
-    dosisDia: 1,
-    mL: 5,
-    mG: 200,
-    comercial: "Zitromax",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg",
-};
+const azitromicinaPre = new Medicine(
+    15,
+    1,
+    5,
+    200,
+    "Zitromax",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg"
+);
 
-const claritromicinaPre125 = {
-    dosisKilo: 15,
-    dosisDia: 1,
-    mL: 5,
-    mG: 125,
-    comercial: "Claricid",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg",
-};
+const claritromicinaPre125 = new Medicine(
+    15,
+    1,
+    5,
+    125,
+    "Claricid",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg"
+);
 
-const claritromicinaPre250 = {
-    dosisKilo: 15,
-    dosisDia: 1,
-    mL: 5,
-    mG: 250,
-    comercial: "Claricid",
-    contra: "",
-    nota: "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg",
-};
-
-document.getElementById("header__menu").addEventListener("click", function (e) {
+const claritromicinaPre250 = new Medicine(
+    15,
+    1,
+    5,
+    250,
+    "Claricid",
+    "",
+    "En niños con mas de 27Kg y adultos administrar una dosis única de 500mg"
+);
+//Animacion menu sandwich
+document.getElementById("header__menu").addEventListener("click", function () {
     var i = Array.from(document.querySelectorAll("#header__menu div"));
     i[0].classList.toggle("header__menu--up");
     i[1].classList.toggle("header__menu--mid");
@@ -324,6 +300,7 @@ document.getElementById("header__menu").addEventListener("click", function (e) {
     document.querySelector("#menuPhone").classList.toggle("unhideMenuPhone");
 });
 
+//Cerrar menu
 document
     .getElementById("close__menuPhone")
     .addEventListener("click", function () {
@@ -352,8 +329,8 @@ if (document.querySelector("#dosis_question")) {
 if (document.querySelector("#ayuda_close")) {
     document
         .querySelector("#ayuda_close")
-        .addEventListener("click", function () {
-            event.preventDefault();
+        .addEventListener("click", function (e) {
+            e.preventDefault();
             document.querySelector("#dosis_ayuda").classList.remove("unhide");
             document.querySelector(".block").style.display = "none";
         });
@@ -491,13 +468,12 @@ if (!document.querySelector("#body__anestesicos")) {
             //Variables para los calculos
             const peso = document.getElementById("pesoNino").value;
             const dosis = document.getElementById("dosisKg").value;
-            const dosisDia =
-                document.getElementById("divisionAnestesico").value;
+            const dosisDia = 36;
             const dosisMaxDiaria = peso * dosis;
             const dosisFinal = dosisMaxDiaria / dosisDia;
 
             //Verificar si falta algun dato o resolver la dosis
-            if (peso === "" || dosis === "" || dosisDia === "") {
+            if (peso === "" || dosis === "") {
                 document.querySelector("#resultado").classList.add("unhide");
                 document.querySelector("#alert_message").textContent =
                     "Opss!! parece que te falta algún dato, por favor verificalos";
