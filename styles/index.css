@@ -176,7 +176,7 @@ h1 {
     font-size: 1.3rem;
 }
 h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 #clouds {
     position: fixed;
@@ -273,6 +273,9 @@ h2 {
     margin: auto;
     padding: 30px 30px 90px 30px;
 }
+#wrapper p {
+    color: #e3e3e3;
+}
 #header {
     display: flex;
     align-items: center;
@@ -324,19 +327,18 @@ h2 {
     margin: 30px 0;
 }
 #containerDescripcion {
-    padding: 10px;
+    padding: 10px 13px;
     margin: 20px;
-    background: #ffffff99;
-    border-radius: 0 0 10px 10px;
-    color: #333;
-    border-top: solid 5px #368a5b;
+    background: #00000042;
+    border-radius: 10px;
+    color: #fff;
+    /* border-top: solid 5px #368a5b; */
     transition: 1s;
-}
-#containerDescripcion h2 {
-    font-size: 1rem;
+    box-shadow: 10px 10px 10px #2b2b2be3 inset;
 }
 #containerDescripcion span {
-    color: #e45454;
+    font-weight: 700;
+    color: #f4aeae;
 }
 .calculadoras {
     width: 100%;
@@ -350,7 +352,7 @@ h2 {
     position: relative;
     background: #93d3e8;
     margin: 30px 0;
-    padding: 10px 80px 10px 20px;
+    padding: 15px 80px 15px 20px;
     border-radius: 10px;
 }
 .calculadoras__boton p {
@@ -503,15 +505,20 @@ select {
     -ms-appearance: none;
     appearance: none;
     border: none;
-    background: #ffffff99;
+    background: transparent;
     font-family: "Josefin Sans", sans-serif;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding-left: 10px;
     width: 100%;
     height: 30px;
+    border-bottom: solid 3px #fff;
+    color: #fff;
 }
 select::-ms-expand {
     display: none;
+}
+select:visited {
+    border: none;
 }
 .select {
     margin-top: 30px;
@@ -555,12 +562,12 @@ select::-ms-expand {
     width: 80%;
     text-align: left;
     padding-left: 20px;
-    background: #ffffff99;
-    border-radius: 10px 0 0 10px;
+    background: #0000002b;
+    border-radius: 5px 0 0 5px;
     height: 30px;
     line-height: 30px;
     margin: 5px 0;
-    color: #333;
+    color: #fff;
 }
 #datos label button {
     transform: translate(10px, 5px);
@@ -576,7 +583,7 @@ select::-ms-expand {
     border: none;
     height: 30px;
     margin: 5px 0;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 25px 25px 0;
     background: #ffffff99;
     text-align: center;
 }
@@ -588,18 +595,19 @@ select::-ms-expand {
 #buttons button {
     border: none;
     height: 35px;
-    border-radius: 30px;
+    border-radius: 5px;
     padding: 0 20px;
     font-weight: 700;
     line-height: 35px;
 }
 #buttons__clear {
-    background-color: #f0d7d7;
-    color: #e45454;
+    background-color: transparent;
+    color: #202020;
 }
 #buttons__calcular {
-    background-color: #1e9447;
+    background-color: #489362;
     color: #fff;
+    box-shadow: 0px 10px 10px -5px #203e2a;
 }
 #header__menu {
     width: 60px;
@@ -646,16 +654,22 @@ select::-ms-expand {
         transform: translateY(-6px) rotate(-405deg);
     }
 }
-#notas p {
-    background: #ffffff99;
+#notas div {
+    background: linear-gradient(
+        170deg,
+        rgba(0, 0, 0, 0.5) 40%,
+        rgba(0, 0, 0, 0.25) 100%
+    );
     padding: 20px;
     border-radius: 10px;
-    color: #333;
+    margin-top: 20px;
+    text-align: left;
 }
-#notas p span {
-    font-size: 1.1rem;
+#notas div p {
+    color: #cfcfcf;
+}
+#notas h2 {
     font-weight: 700;
-    color: #6c5b7b;
 }
 #menuPhone {
     position: fixed;
