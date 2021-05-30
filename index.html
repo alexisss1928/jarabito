@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-143405112-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-143405112-1");
+		</script>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,user-scalable=no"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="512x512"
+			href="images/favicon.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			type="image/png"
+			sizes="512x512"
+			href="images/favicon.png"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="application-name" content="Jarabito" />
+		<meta name="apple-mobile-web-app-title" content="Jarabito" />
+		<meta name="theme-color" content="#2b83bb" />
+		<meta name="msapplication-navbutton-color" content="#2b83bb" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<meta name="msapplication-starturl" content="/" />
+		<title>Jarabito | Calculadora de dosis pediátricas</title>
+		<link href="styles/index.css" rel="stylesheet" />
+	</head>
+
+	<body id="body__index">
+		<div id="swup">
+			<div id="clouds">
+				<img class="clouds__cloud" src="images/cloud.png" alt="" />
+				<img
+					class="clouds__cloud clouds__cloud-1"
+					src="images/cloud.png"
+					alt=""
+				/>
+				<img
+					class="clouds__cloud clouds__cloud-2"
+					src="images/cloud.png"
+					alt=""
+				/>
+				<img
+					class="clouds__cloud clouds__cloud-3"
+					src="images/cloud.png"
+					alt=""
+				/>
+				<img
+					class="clouds__cloud clouds__cloud-4"
+					src="images/cloud.png"
+					alt=""
+				/>
+				<img
+					class="clouds__cloud clouds__cloud-5"
+					src="images/cloud.png"
+					alt=""
+				/>
+			</div>
+			<div id="wrapper">
+				<header id="header">
+					<a href="index.html"
+						><div id="header__logo">
+							<img src="images/logo.png" alt="" /></div></a
+					><a href="index.html"
+						><div id="header__title">
+							<h1>Jarabito</h1>
+							<p>Calculadora de dosis pediátricas</p>
+						</div></a
+					>
+				</header>
+				<div id="bienvenida">
+					<p>
+						Bienvenid@, selecciona la calculadora de la lista de abajo y
+						comienza a calcular las dosis de los mas pequeños de la casa.
+					</p>
+				</div>
+				<div class="calculadoras">
+					<a href="/antibioticos.html" id="antibioticos"
+						><div class="calculadoras__boton calculadoras__boton--antibioticos">
+							<h2>Antibióticos y analgésicos</h2>
+							<p>Calcula la dosis y frecuencia de antibióticos y analgésicos</p>
+							<img src="images/boy-01.svg" alt="" /></div></a
+					><a href="/preventivos.html" id="preventivo"
+						><div class="calculadoras__boton calculadoras__boton--preventivo">
+							<h2>Analgésicos preventivos</h2>
+							<p>
+								Calcula la dosis preventiva previa a realizar algún tratamiento
+							</p>
+							<img src="images/girl-02.svg" alt="" /></div></a
+					><a href="/anestesicos.html" id="anestesicos"
+						><div class="calculadoras__boton calculadoras__boton--anestesicos">
+							<h2>Anestesia</h2>
+							<P>Calcula la cantidad de carpules necesarios</P
+							><img src="images/boy-02.svg" alt="" /></div
+					></a>
+				</div>
+				<div id="otros">
+					<a href="/notas.html" id="notas"
+						><div class="calculadoras__boton calculadoras__boton--otro">
+							<h2>Notas</h2>
+							<img src="images/girl-01.svg" alt="" /></div
+					></a>
+					<div class="otros__social">
+						<h2>Compartir:</h2>
+						<div id="social__icons">
+							<a
+								href="whatsapp://send?text=https://jarabito.netlify.com/"
+								data-action="share/whatsapp/share"
+								><img src="images/wp.svg" alt=""/></a
+							><a
+								href="http://www.facebook.com/sharer.php?u=https://jarabito.netlify.com"
+								><img src="images/fb.svg" alt=""
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<p>
+					Creado por
+					<a href="https://alexisss1928.github.io/"
+						><span>&lt;Alexis Salcedo&gt;</span></a
+					>
+				</p>
+			</div>
+		</div>
+		<script>
+			if ("serviceWorker" in navigator) {
+				window.addEventListener("load", () => {
+					navigator.serviceWorker
+						.register("/sw.js")
+						.then(registration => {
+							console.log("SW registered: ", registration);
+						})
+						.catch(registrationError => {
+							console.log("SW registration failed: ", registrationError);
+						});
+				});
+			}
+		</script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
