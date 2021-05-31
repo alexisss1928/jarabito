@@ -390,9 +390,10 @@ h2 {
 .calculadoras__boton--anestesicos img {
     right: 23px;
 }
-.calculadoras__boton--otro {
+#notas .calculadoras__boton--otro {
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 20px;
+    border-radius: 10px;
     background-image: linear-gradient(to right, #e64e3e, #af5249);
     box-shadow: 0px 20px 5px -15px rgba(149, 41, 29, 0.4);
 }
