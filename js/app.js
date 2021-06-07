@@ -405,7 +405,7 @@ if (!document.querySelector("#body__anestesicos")) {
             //Variables para los calculos
             const peso = document.getElementById("pesoNino").value;
             const dosis = document.getElementById("dosisKg").value;
-            const dosisDia = document.getElementById("dosisDia").value;
+            const dosisDia = document.getElementById("dosisDia").value ||1 ;
             const mL = document.getElementById("ml").value;
             const mG = document.getElementById("mg").value;
             const dosisMaxDiaria = peso * dosis;
